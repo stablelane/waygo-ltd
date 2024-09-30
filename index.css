@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    width: 100vw
+    
+    
+}
+.hero{
+    background-image: url(images/hassan-faisal-BBHjHV02pnY-unsplash.jpg);
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    color: white;
+    
+}
+.nav-bar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    display: flex;
+}
+.logo-img{
+    width: 5.75em;
+    height: 1.875em;
+    filter: invert() brightness(200%);
+    margin: 0;
+    
+}
+.logo-name{
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-left: -10px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 30px;
+}
+.main-head{
+    text-align: center;
+    margin: 0 auto 0;
+    width: 89vw;
+    margin-top: 20vh;
+}
+.hero-text{
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 0;
+    margin-bottom: 0em;
+    font-weight: 600;
+  
+}
+.hero-sub-text{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+    
+
+}
+#search-btn{
+    width: 60vw;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    padding-left: 71px;
+    padding-right: 50px;
+    box-shadow: 4px 3px 18px #1f1f1f;
+  
+}
+#search-btn:focus{
+    outline: none;
+}
+
+.location-heading,.trip-wrapper{
+    margin: 1em auto;
+    width: 89vw;
+}
+.location-heading h2{
+    font-size: 1.4rem;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    color: #312e3a;
+    margin-bottom: 0;
+}
+.location-heading p{
+    font-size: 0.93rem;
+    font-family: "IBM Plex Sans";
+    line-height: 18px;
+    color: #777;
+    margin-top: 0;
+  
+}
+.trip-wrapper{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.trip-card{
+    padding: 20px 15px;
+    width: 9.37em;
+    height: 241px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    margin-bottom: 0.2em;
+    position: relative;
+    
+}
+.trip-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    border-radius: 10px; /* Match border-radius of the card */
+    z-index: 1; /* Place behind the text */
+}
+
+.card-head{
+    
+    font-size: 1.25rem;
+    color: #fff;
+    position: relative; /* Bring the text above the overlay */
+    z-index: 2; 
+    margin: 0;
+
+}
+
+.kerala{
+    background-image: url(images/Kerala.png);
+    
+}
+.meghalaya{
+    background-image: url(images/Meghalaya_cover.png);
+}
+.rajasthan{
+    background-image: url(images/rajasthan.jpg);
+}
+.himachal{
+    background-image: url(images/himachal.jpeg);
+}
+.delhi{
+    background-image: url(images/annie-spratt-IPlPkWPJ2fo-unsplash.jpg);
+}
