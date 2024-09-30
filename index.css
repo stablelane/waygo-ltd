@@ -112,10 +112,11 @@ ul{
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 .trip-card{
     padding: 20px 15px;
-    width: 9.37em;
+    width: 8em;
     height: 241px;
     background-size: cover;
     background-position: center center;
