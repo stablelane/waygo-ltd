@@ -3,6 +3,15 @@ body{
     width: 100vw;
     
     
+    
+}
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+
 }
 .hero{
     background-image: url(images/hassan-faisal-BBHjHV02pnY-unsplash.jpg);
@@ -51,22 +60,24 @@ ul{
     padding: 0 30px;
 }
 .main-head{
-    text-align: center;
     margin: 0 auto 0;
     width: 89vw;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
+    position: absolute; /* Set the child to absolute positioning */
+    top: 45%; /* Position it at the vertical center */
+    left: 50%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust its position to truly center */
+    width: 89vw;
 }
 .hero-text{
-    text-align: left;
     font-size: 2.5rem;
     line-height: 3rem;
     margin-top: 0;
     margin-bottom: 0em;
-    font-weight: 600;
+    font-weight: 500;
   
 }
 .hero-sub-text{
-    text-align: left;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 500;
@@ -74,7 +85,6 @@ ul{
 
 }
 #search-btn{
-    box-sizing: border-box;
     width: 90vw;
     height: 50px;
     border-radius: 5px;
@@ -116,9 +126,8 @@ ul{
 }
 .trip-card{
     padding: 20px 15px;
-    max-width: 33.99vw;
-    height: 241px;
-    flex: 1 1 calc(30% - 1em);
+    height: 35vh;
+    flex: 1 1 calc(40% - 1em);
     background-size: cover;
     background-position: center center;
     border-radius: 10px;
@@ -126,6 +135,9 @@ ul{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 .trip-card::after {
@@ -149,6 +161,26 @@ ul{
     margin: 0;
 
 }
+.card-list{
+    color: #fff;
+    font-size: 0.82em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+}
+.card-list li{
+    width: 100%;
+    white-space: nowrap;
+    align-self: flex-start;
+    border-bottom: 1px solid #fff;
+
+    
+}
 
 .kerala{
     background-image: url(images/Kerala.png);
@@ -165,4 +197,37 @@ ul{
 }
 .delhi{
     background-image: url(images/annie-spratt-IPlPkWPJ2fo-unsplash.jpg);
+}
+@media(min-width: 651px){
+    .trip-card{
+        flex: 1 1 calc(30% - 1em);
+    }
+}
+@media(min-width: 768px){
+    .main-head{
+        text-align: center;
+        width: 58.987vw;
+        margin-bottom: 0px;
+    }
+    .hero-text{
+        font-size: calc(1vw + 3rem);
+        line-height: normal;
+        font-weight: 600;
+        
+    }
+    .hero-sub-text{
+        font-size: 1.5rem;
+        font-size: calc(1vw + 0.28rem);
+        width: 35.417vw;
+        margin: 1em auto;
+    }
+    .location-heading{
+        width: 78.125vw;
+    }
+    .trip-wrapper{
+        width: 78.125vw;
+    }
+    #search-btn{
+        width: 22em;
+    }
 }
